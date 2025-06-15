@@ -28,10 +28,10 @@ jobs:
           pip install pandas numpy scikit-learn
 
       - name: Run preprocessing script
-        run: python preprocessing/automate_Nama-siswa.py
+        run: python preprocessing/automate_wahyu.py
 
       - name: Upload processed data artifact
         uses: actions/upload-artifact@v4
         with:
           name: processed-dataset
-          path: preprocessing/namadataset_preprocessing/
+          path: preprocessing/Kelayakan-pendidikan-indonesia_preprocessing/
